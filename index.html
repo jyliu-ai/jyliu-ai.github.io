@@ -36,11 +36,18 @@
       overflow: hidden;
     }
     /* When you have a real teaser image, put:
-       <div class="pub-thumb"><img src="./pictures/pub/xxx.png"></div>  */
+       <div class="pub-thumb"><img src="./files/pictures/xxx.png"></div>  */
+    .pub-thumb:has(img){
+      padding: 0;
+      background: none;
+      border: none;
+    }
     .pub-thumb img{
-      max-width: 100%;
-      max-height: 100%;
-      border-radius: 4px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 6px;
+      display: block;
     }
     .pub-detail{
       flex: 1;
@@ -161,12 +168,12 @@
        <img src="./pictures/pub/your-image.png">  -->
 
   <div class="pub-item">
-    <div class="pub-thumb">TPAMI<br>2026</div>
+    <div class="pub-thumb"><img src="./files/pictures/JiayuLiu-TPAMI2026.png"></div>
     <div class="pub-detail">
       <span class="pub-title">Enhancing Mathematical Reasoning Through Autonomously Learning Knowledge</span><br>
       <span class="me">Jiayu Liu</span>, Zhenya Huang, Enhong Chen, Qi Liu, Hongke Zhao, Xin Lin, Jing Sha, Shijin Wang.<br>
       <span class="pub-venue">IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</span>, 48(3), 3100-3118, 2026.
-      [<a href="./files/papers/Jiayuliu-TPAMI2026.pdf" target="_blank" rel="noopener">PDF</a>]
+      [<a href="./files/papers/JiayuLiu-TPAMI2026.pdf" target="_blank" rel="noopener">PDF</a>]
       [<a href="https://github.com/Ljyustc/CogSolver" target="_blank" rel="noopener">DATA &amp; CODE</a>]
     </div>
   </div>
@@ -177,13 +184,13 @@
       <span class="pub-title">Knowledge-Centered Dual-Process Reasoning for Math Word Problems with Large Language Models</span><br>
       <span class="me">Jiayu Liu</span>, Zhenya Huang, Qi Liu, Zhiyuan Ma, Chengxiang Zhai, Enhong Chen.<br>
       <span class="pub-venue">IEEE Transactions on Knowledge and Data Engineering (TKDE)</span>, 37(6), 3457-3471, 2025.
-      [<a href="./files/papers/Jiayuliu-TKDE2025.pdf" target="_blank" rel="noopener">PDF</a>]
+      [<a href="./files/papers/JiayuLiu-TKDE2025.pdf" target="_blank" rel="noopener">PDF</a>]
       [<a href="https://github.com/Ljyustc/KNOS" target="_blank" rel="noopener">DATA &amp; CODE</a>]
     </div>
   </div>
 
   <div class="pub-item">
-    <div class="pub-thumb">ICML<br>2025</div>
+    <div class="pub-thumb"><img src="./files/pictures/JiayuLiu-ICML-2026.png"></div>
     <div class="pub-detail">
       <span class="pub-title">What Makes In-context Learning Effective for Mathematical Reasoning</span><br>
       <span class="me">Jiayu Liu</span>, Zhenya Huang, Chaokun Wang, Xunpeng Huang, ChengXiang Zhai, Enhong Chen.<br>
@@ -194,7 +201,7 @@
   </div>
 
   <div class="pub-item">
-    <div class="pub-thumb">ICML<br>2025</div>
+    <div class="pub-thumb"><img src="./files/pictures/JiayuLiu-ICML-2026-1.png"></div>
     <div class="pub-detail">
       <span class="pub-title">CogMath: Assessing LLMs' Authentic Mathematical Ability from a Human Cognitive Perspective</span><br>
       <span class="me">Jiayu Liu</span>, Zhenya Huang, Wei Dai, Cheng Cheng, Jinze Wu, Jing Sha, Song Li, Qi Liu, Shijin Wang, Enhong Chen.<br>
@@ -205,7 +212,7 @@
   </div>
 
   <div class="pub-item">
-    <div class="pub-thumb">NeurIPS<br>2024</div>
+    <div class="pub-thumb"><img src="./files/pictures/JiayuLiu-NIPS2024.png"></div>
     <div class="pub-detail">
       <span class="pub-title">SocraticLM: Exploring Socratic Personalized Teaching with Large Language Models</span><br>
       <span class="me">Jiayu Liu</span>, Zhenya Huang, Tong Xiao, Jing Sha, Jinze Wu, Qi Liu, Shijin Wang, Enhong Chen.<br>
@@ -216,7 +223,7 @@
   </div>
 
   <div class="pub-item">
-    <div class="pub-thumb">KDD<br>2023</div>
+    <div class="pub-thumb"><img src="./files/pictures/JiayuLiu-KDD2023.png"></div>
     <div class="pub-detail">
       <span class="pub-title">Guiding Mathematical Reasoning via Mastering Commonsense Formula Knowledge</span><br>
       <span class="me">Jiayu Liu</span>, Zhenya Huang*, Zhiyuan Ma, Qi Liu, Enhong Chen*, Tianhuang Su, Haifeng Liu.<br>
@@ -227,7 +234,7 @@
   </div>
 
   <div class="pub-item">
-    <div class="pub-thumb">AAAI<br>2023</div>
+    <div class="pub-thumb"><img src="./files/pictures/JiayuLiu-AAAI2023.png"></div>
     <div class="pub-detail">
       <span class="pub-title">Learning by Applying: A General Framework for Mathematical Reasoning via Enhancing Explicit Knowledge Learning</span><br>
       <span class="me">Jiayu Liu</span>, Zhenya Huang*, Chengxiang Zhai, Qi Liu.<br>
@@ -238,7 +245,7 @@
   </div>
 
   <div class="pub-item">
-    <div class="pub-thumb">ICDM<br>2022</div>
+    <div class="pub-thumb"><img src="./files/pictures/JiayuLiu-ICDM2022.png"></div>
     <div class="pub-detail">
       <span class="pub-title">A Cognitive Solver with Autonomously Knowledge Learning for Reasoning Mathematical Answers</span><br>
       <span class="me">Jiayu Liu</span>, Zhenya Huang*, Xin Lin, Qi Liu, Jianhui Ma, Enhong Chen.<br>
@@ -291,7 +298,7 @@
   </div>
 
   <div class="pub-item">
-    <div class="pub-thumb">NeurIPS<br>2024</div>
+    <div class="pub-thumb"><img src="./files/pictures/ShangziXue-NIPS2024.png"></div>
     <div class="pub-detail">
       <span class="pub-title">Solving Intricate Problems with Human-like Decomposition and Rethinking</span><br>
       Shangzi Xue, Zhenya Huang, <span class="me">Jiayu Liu</span>, Xin Lin, Yuting Ning, Binbin Jin, Xin Li, Qi Liu.<br>
@@ -313,7 +320,7 @@
   </div>
 
   <div class="pub-item">
-    <div class="pub-thumb">WWW<br>2024</div>
+    <div class="pub-thumb"><img src="./files/pictures/LiyangHe-WWW2024.png"></div>
     <div class="pub-detail">
       <span class="pub-title">Bit-mask Robust Contrastive Knowledge Distillation for Unsupervised Semantic Hashing</span><br>
       Liyang He, Zhenya Huang, <span class="me">Jiayu Liu</span>, Enhong Chen, Fei Wang, Jing Sha, Shijin Wang.<br>
@@ -397,10 +404,11 @@
         <li>IEEE Transactions on Big Data (IEEE TBD)</li>
         <li>Science China Information Science (SCIS)</li>
         <li>Journal of Computer Science and Technology (JCST)</li>
+        <li>ACM Transactions on Information Systems (ACM TOIS)</li>
       </ul>
     <li><strong>Program Committee Member:</strong></li>
       <ul style="font-size: 12.0pt">
-        <li>2026: ICLR, KDD, AAAI</li>
+        <li>2026: ICLR, ICML, KDD, AAAI</li>
         <li>2025: ICLR, NeurIPS, KDD</li>
         <li>2024: IJCAI, KDD, PAKDD, ACML</li>
       </ul>
